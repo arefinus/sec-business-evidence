@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sec-business-evidence"
+version = "0.1.0"
+description = "Cached SEC EDGAR company-facts ingestion with source-cited ratio analysis and review flags, never a fraud verdict"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Md Sultanul Arefin Sourav" }]
+dependencies = ["numpy>=1.24", "pandas>=2.0", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+sec-business-evidence = "sec_business_evidence.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

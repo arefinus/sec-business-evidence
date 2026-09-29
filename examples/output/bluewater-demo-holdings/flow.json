@@ -1,0 +1,118 @@
+{
+ "schemaVersion": 1,
+ "mode": "synthetic-demo",
+ "issuer": {
+  "cik": "9999999002",
+  "name": "Bluewater Demo Holdings"
+ },
+ "fiscal_year": 2024,
+ "nodes": [
+  {
+   "id": "revenue",
+   "label": "Revenue",
+   "value": 1078350080,
+   "unit": "USD",
+   "period": "2024-01-01 to 2024-12-31",
+   "tag": "Revenues",
+   "citation_ids": [
+    "E:999999900225000016:Revenues:2024-12-31"
+   ]
+  },
+  {
+   "id": "receivables",
+   "label": "Receivables",
+   "value": 204886515,
+   "unit": "USD",
+   "period": "as of 2024-12-31",
+   "tag": "AccountsReceivableNetCurrent",
+   "citation_ids": [
+    "E:999999900225000016:AccountsReceivableNetCurrent:2024-12-31"
+   ]
+  },
+  {
+   "id": "cash",
+   "label": "Cash",
+   "value": 95331770,
+   "unit": "USD",
+   "period": "as of 2024-12-31",
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "citation_ids": [
+    "E:999999900225000016:CashAndCashEquivalentsAtCarryingValue:2024-12-31"
+   ]
+  },
+  {
+   "id": "liabilities",
+   "label": "Liabilities",
+   "value": 657793549,
+   "unit": "USD",
+   "period": "as of 2024-12-31",
+   "tag": "Liabilities",
+   "citation_ids": [
+    "E:999999900225000016:Liabilities:2024-12-31"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "revenue",
+   "target": "receivables",
+   "relation": "receivables_to_revenue",
+   "value": 0.18999999981453147,
+   "unit": "fraction",
+   "citation_ids": [
+    "E:999999900225000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900225000016:Revenues:2024-12-31"
+   ],
+   "flag_ids": []
+  },
+  {
+   "source": "receivables",
+   "target": "cash",
+   "relation": "dso",
+   "value": 69.34999993230399,
+   "unit": "days",
+   "citation_ids": [
+    "E:999999900225000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900225000016:Revenues:2024-12-31"
+   ],
+   "flag_ids": []
+  },
+  {
+   "source": "revenue",
+   "target": "cash",
+   "relation": "ocf_to_net_income",
+   "value": 0.7000000015348394,
+   "unit": "ratio",
+   "citation_ids": [
+    "E:999999900225000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31",
+    "E:999999900225000016:NetIncomeLoss:2024-12-31"
+   ],
+   "flag_ids": []
+  },
+  {
+   "source": "cash",
+   "target": "liabilities",
+   "relation": "current_ratio",
+   "value": 1.3314889665433718,
+   "unit": "ratio",
+   "citation_ids": [
+    "E:999999900225000016:AssetsCurrent:2024-12-31",
+    "E:999999900225000016:LiabilitiesCurrent:2024-12-31"
+   ],
+   "flag_ids": []
+  },
+  {
+   "source": "liabilities",
+   "target": "revenue",
+   "relation": "debt_to_equity",
+   "value": 0.6428571431725655,
+   "unit": "ratio",
+   "citation_ids": [
+    "E:999999900225000016:LongTermDebtNoncurrent:2024-12-31",
+    "E:999999900225000016:StockholdersEquity:2024-12-31"
+   ],
+   "flag_ids": []
+  }
+ ],
+ "flags": []
+}

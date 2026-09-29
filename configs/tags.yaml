@@ -1,0 +1,39 @@
+# Concept mapping used by the ratio layer. The first tag present in the facts wins.
+# Tags are us-gaap XBRL element names as they appear in the companyfacts API.
+# kind: duration facts carry a start and an end date; instant facts carry only an end date.
+schema_version: 1
+concepts:
+  revenue:
+    kind: duration
+    tags: [Revenues, RevenueFromContractWithCustomerExcludingAssessedTax, SalesRevenueNet]
+  receivables:
+    kind: instant
+    tags: [AccountsReceivableNetCurrent]
+  operating_cash_flow:
+    kind: duration
+    tags: [NetCashProvidedByUsedInOperatingActivities]
+  net_income:
+    kind: duration
+    tags: [NetIncomeLoss]
+  current_assets:
+    kind: instant
+    tags: [AssetsCurrent]
+  current_liabilities:
+    kind: instant
+    tags: [LiabilitiesCurrent]
+  liabilities:
+    kind: instant
+    tags: [Liabilities]
+  equity:
+    kind: instant
+    tags: [StockholdersEquity, StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest]
+  debt_noncurrent:
+    kind: instant
+    tags: [LongTermDebtNoncurrent]
+  debt_current:
+    kind: instant
+    tags: [DebtCurrent, LongTermDebtCurrent]
+  cash:
+    kind: instant
+    tags: [CashAndCashEquivalentsAtCarryingValue]
+money_units: [USD]

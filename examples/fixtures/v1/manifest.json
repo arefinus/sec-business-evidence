@@ -1,0 +1,12 @@
+{
+ "version": "v1",
+ "seed": 42,
+ "sha256": {
+  "CIK9999999001_companyfacts.json": "32b3248617690f1870ec21768d64c6064dabc14e601f0f0176d3c88c29c2dbd5",
+  "CIK9999999001_submissions.json": "52b77ee6d4f1a8f16957f4b2ddb0888bc3f9acedf235ed66572dbee6c37570ff",
+  "CIK9999999002_companyfacts.json": "c9b90be600c0dfb6afb2e47b75daf90d8f8764b28e71f8928c7943f393bfa96e",
+  "CIK9999999002_submissions.json": "5e4e8671e69a268a6f016d98b63ee3712eb58d8b34998fb2f1f68dc85d9d6629",
+  "CIK9999999003_companyfacts.json": "599681d728f9d1aa3c4151c1d42eea0a13f54885a2aa776fe6e0e5e967f2a16f",
+  "CIK9999999003_submissions.json": "6850067285a4d80116d94d1c4dfabe13d09ca5e4a9791e03993994eca4794252"
+ }
+}

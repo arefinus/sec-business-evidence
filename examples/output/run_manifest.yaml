@@ -1,0 +1,24 @@
+schema_version: 1
+project_id: sec-business-evidence
+run_id: 20260928T104959Z-sec-business-evidence-demo
+status: completed
+mode: demo
+evidence_status: demo
+git_commit: null
+data:
+  source_id: synthetic-fixture-v1
+  version: v1
+  split_manifest_hash: 3ae6b01be69693e870b0a7ea3e25d2bc90d29532652a3c09fd82e594e38115a6
+  sample_counts:
+    northwind-demo-corp: 120
+    bluewater-demo-holdings: 112
+    granite-demo-industries: 120
+configuration_hash: 98b2b8b0282d338e85eeae92f2ee65ecee518409f480d0ad5e9429e86ad6cbed
+seed: 42
+environment:
+  python: 3.10.11
+  device: cpu
+metrics_file: null
+predictions_file: null
+started_at: '2026-09-28T10:49:59+00:00'
+finished_at: '2026-09-28T10:49:59+00:00'

@@ -1,0 +1,1825 @@
+{
+ "schemaVersion": 1,
+ "mode": "synthetic-demo",
+ "evidence_status": "demo",
+ "generated_by": "sec_business_evidence 0.1.0",
+ "disclaimer": "Review flags are threshold rules that ask an analyst to look at a change. This repository contains no fraud classifier and produces no verdict.",
+ "issuer": {
+  "cik": "9999999003",
+  "name": "Granite Demo Industries"
+ },
+ "as_of": "2025-06-30",
+ "url_patterns": {
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/{cik_int}/{accn_nodash}/{accn}-index.htm",
+  "filing_folder": "https://www.sec.gov/Archives/edgar/data/{cik_int}/{accn_nodash}/",
+  "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik10}&type={form}&dateb=&owner=include&count=40",
+  "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik10}.json"
+ },
+ "selection": {
+  "facts_total": 153,
+  "facts_known_at_as_of": 153,
+  "facts_superseded": 0,
+  "facts_duplicates_dropped": 33,
+  "facts_in_scope": 120
+ },
+ "fiscal_years": [
+  {
+   "fy": 2021,
+   "period_end": "2021-12-31",
+   "ratios": [
+    {
+     "name": "revenue_growth",
+     "fiscal_year": 2021,
+     "value": null,
+     "unit": "fraction",
+     "reason": "no prior fiscal year revenue",
+     "citation_ids": [
+      "E:999999900322000004:Revenues:2021-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900322000004:Revenues:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3120000000,
+       "period": "2021-01-01 to 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "receivables_to_revenue",
+     "fiscal_year": 2021,
+     "value": 0.14,
+     "unit": "fraction",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900322000004:AccountsReceivableNetCurrent:2021-12-31",
+      "E:999999900322000004:Revenues:2021-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900322000004:AccountsReceivableNetCurrent:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 436800000,
+       "period": "as of 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900322000004:Revenues:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3120000000,
+       "period": "2021-01-01 to 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "dso",
+     "fiscal_year": 2021,
+     "value": 51.1,
+     "unit": "days",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900322000004:AccountsReceivableNetCurrent:2021-12-31",
+      "E:999999900322000004:Revenues:2021-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900322000004:AccountsReceivableNetCurrent:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 436800000,
+       "period": "as of 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900322000004:Revenues:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3120000000,
+       "period": "2021-01-01 to 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "ocf_to_net_income",
+     "fiscal_year": 2021,
+     "value": 1.2000000025529007,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900322000004:NetCashProvidedByUsedInOperatingActivities:2021-12-31",
+      "E:999999900322000004:NetIncomeLoss:2021-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900322000004:NetCashProvidedByUsedInOperatingActivities:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "NetCashProvidedByUsedInOperatingActivities",
+       "unit": "USD",
+       "value": 188021404,
+       "period": "2021-01-01 to 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900322000004:NetIncomeLoss:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "NetIncomeLoss",
+       "unit": "USD",
+       "value": 156684503,
+       "period": "2021-01-01 to 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "current_ratio",
+     "fiscal_year": 2021,
+     "value": 1.1346249316239316,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900322000004:AssetsCurrent:2021-12-31",
+      "E:999999900322000004:LiabilitiesCurrent:2021-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900322000004:AssetsCurrent:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "AssetsCurrent",
+       "unit": "USD",
+       "value": 1062008936,
+       "period": "as of 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900322000004:LiabilitiesCurrent:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "LiabilitiesCurrent",
+       "unit": "USD",
+       "value": 936000000,
+       "period": "as of 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "debt_to_equity",
+     "fiscal_year": 2021,
+     "value": 0.4270833333333333,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900322000004:LongTermDebtNoncurrent:2021-12-31",
+      "E:999999900322000004:DebtCurrent:2021-12-31",
+      "E:999999900322000004:StockholdersEquity:2021-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900322000004:LongTermDebtNoncurrent:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "LongTermDebtNoncurrent",
+       "unit": "USD",
+       "value": 561600000,
+       "period": "as of 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900322000004:DebtCurrent:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "DebtCurrent",
+       "unit": "USD",
+       "value": 78000000,
+       "period": "as of 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900322000004:StockholdersEquity:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "StockholdersEquity",
+       "unit": "USD",
+       "value": 1497600000,
+       "period": "as of 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "fy": 2022,
+   "period_end": "2022-12-31",
+   "ratios": [
+    {
+     "name": "revenue_growth",
+     "fiscal_year": 2022,
+     "value": 0.04,
+     "unit": "fraction",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900323000008:Revenues:2022-12-31",
+      "E:999999900322000004:Revenues:2021-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900323000008:Revenues:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3244800000,
+       "period": "2022-01-01 to 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900322000004:Revenues:2021-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-22-000004",
+       "form": "10-K",
+       "filed": "2022-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3120000000,
+       "period": "2021-01-01 to 2021-12-31",
+       "fy": 2021,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "receivables_to_revenue",
+     "fiscal_year": 2022,
+     "value": 0.14,
+     "unit": "fraction",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900323000008:AccountsReceivableNetCurrent:2022-12-31",
+      "E:999999900323000008:Revenues:2022-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900323000008:AccountsReceivableNetCurrent:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 454272000,
+       "period": "as of 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900323000008:Revenues:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3244800000,
+       "period": "2022-01-01 to 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "dso",
+     "fiscal_year": 2022,
+     "value": 51.1,
+     "unit": "days",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900323000008:AccountsReceivableNetCurrent:2022-12-31",
+      "E:999999900323000008:Revenues:2022-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900323000008:AccountsReceivableNetCurrent:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 454272000,
+       "period": "as of 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900323000008:Revenues:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3244800000,
+       "period": "2022-01-01 to 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "ocf_to_net_income",
+     "fiscal_year": 2022,
+     "value": 1.0999999987898894,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900323000008:NetCashProvidedByUsedInOperatingActivities:2022-12-31",
+      "E:999999900323000008:NetIncomeLoss:2022-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900323000008:NetCashProvidedByUsedInOperatingActivities:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "NetCashProvidedByUsedInOperatingActivities",
+       "unit": "USD",
+       "value": 181801556,
+       "period": "2022-01-01 to 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900323000008:NetIncomeLoss:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "NetIncomeLoss",
+       "unit": "USD",
+       "value": 165274142,
+       "period": "2022-01-01 to 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "current_ratio",
+     "fiscal_year": 2022,
+     "value": 1.097222943309792,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900323000008:AssetsCurrent:2022-12-31",
+      "E:999999900323000008:LiabilitiesCurrent:2022-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900323000008:AssetsCurrent:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "AssetsCurrent",
+       "unit": "USD",
+       "value": 1103683392,
+       "period": "as of 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900323000008:LiabilitiesCurrent:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "LiabilitiesCurrent",
+       "unit": "USD",
+       "value": 1005888000,
+       "period": "as of 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "debt_to_equity",
+     "fiscal_year": 2022,
+     "value": 0.5108695652173914,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900323000008:LongTermDebtNoncurrent:2022-12-31",
+      "E:999999900323000008:DebtCurrent:2022-12-31",
+      "E:999999900323000008:StockholdersEquity:2022-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900323000008:LongTermDebtNoncurrent:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "LongTermDebtNoncurrent",
+       "unit": "USD",
+       "value": 681408000,
+       "period": "as of 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900323000008:DebtCurrent:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "DebtCurrent",
+       "unit": "USD",
+       "value": 81120000,
+       "period": "as of 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900323000008:StockholdersEquity:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "StockholdersEquity",
+       "unit": "USD",
+       "value": 1492608000,
+       "period": "as of 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "fy": 2023,
+   "period_end": "2023-12-31",
+   "ratios": [
+    {
+     "name": "revenue_growth",
+     "fiscal_year": 2023,
+     "value": -0.02,
+     "unit": "fraction",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900324000012:Revenues:2023-12-31",
+      "E:999999900323000008:Revenues:2022-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900324000012:Revenues:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3179904000,
+       "period": "2023-01-01 to 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900323000008:Revenues:2022-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-23-000008",
+       "form": "10-K",
+       "filed": "2023-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3244800000,
+       "period": "2022-01-01 to 2022-12-31",
+       "fy": 2022,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "receivables_to_revenue",
+     "fiscal_year": 2023,
+     "value": 0.15,
+     "unit": "fraction",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+      "E:999999900324000012:Revenues:2023-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 476985600,
+       "period": "as of 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900324000012:Revenues:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3179904000,
+       "period": "2023-01-01 to 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "dso",
+     "fiscal_year": 2023,
+     "value": 54.75,
+     "unit": "days",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+      "E:999999900324000012:Revenues:2023-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 476985600,
+       "period": "as of 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900324000012:Revenues:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3179904000,
+       "period": "2023-01-01 to 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "ocf_to_net_income",
+     "fiscal_year": 2023,
+     "value": 0.8999999975281182,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900324000012:NetCashProvidedByUsedInOperatingActivities:2023-12-31",
+      "E:999999900324000012:NetIncomeLoss:2023-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900324000012:NetCashProvidedByUsedInOperatingActivities:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "NetCashProvidedByUsedInOperatingActivities",
+       "unit": "USD",
+       "value": 145638032,
+       "period": "2023-01-01 to 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900324000012:NetIncomeLoss:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "NetIncomeLoss",
+       "unit": "USD",
+       "value": 161820036,
+       "period": "2023-01-01 to 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "current_ratio",
+     "fiscal_year": 2023,
+     "value": 0.9480240781902012,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900324000012:AssetsCurrent:2023-12-31",
+      "E:999999900324000012:LiabilitiesCurrent:2023-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900324000012:AssetsCurrent:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "AssetsCurrent",
+       "unit": "USD",
+       "value": 1085265201,
+       "period": "as of 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900324000012:LiabilitiesCurrent:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "LiabilitiesCurrent",
+       "unit": "USD",
+       "value": 1144765440,
+       "period": "as of 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "debt_to_equity",
+     "fiscal_year": 2023,
+     "value": 0.6022727272727273,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900324000012:LongTermDebtNoncurrent:2023-12-31",
+      "E:999999900324000012:DebtCurrent:2023-12-31",
+      "E:999999900324000012:StockholdersEquity:2023-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900324000012:LongTermDebtNoncurrent:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "LongTermDebtNoncurrent",
+       "unit": "USD",
+       "value": 763176960,
+       "period": "as of 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900324000012:DebtCurrent:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "DebtCurrent",
+       "unit": "USD",
+       "value": 79497600,
+       "period": "as of 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900324000012:StockholdersEquity:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "StockholdersEquity",
+       "unit": "USD",
+       "value": 1399157760,
+       "period": "as of 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "fy": 2024,
+   "period_end": "2024-12-31",
+   "ratios": [
+    {
+     "name": "revenue_growth",
+     "fiscal_year": 2024,
+     "value": -0.15,
+     "unit": "fraction",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900325000016:Revenues:2024-12-31",
+      "E:999999900324000012:Revenues:2023-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900325000016:Revenues:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 2702918400,
+       "period": "2024-01-01 to 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900324000012:Revenues:2023-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-24-000012",
+       "form": "10-K",
+       "filed": "2024-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 3179904000,
+       "period": "2023-01-01 to 2023-12-31",
+       "fy": 2023,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "receivables_to_revenue",
+     "fiscal_year": 2024,
+     "value": 0.2,
+     "unit": "fraction",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+      "E:999999900325000016:Revenues:2024-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 540583680,
+       "period": "as of 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900325000016:Revenues:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 2702918400,
+       "period": "2024-01-01 to 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "dso",
+     "fiscal_year": 2024,
+     "value": 73.0,
+     "unit": "days",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+      "E:999999900325000016:Revenues:2024-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "AccountsReceivableNetCurrent",
+       "unit": "USD",
+       "value": 540583680,
+       "period": "as of 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900325000016:Revenues:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "Revenues",
+       "unit": "USD",
+       "value": 2702918400,
+       "period": "2024-01-01 to 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "ocf_to_net_income",
+     "fiscal_year": 2024,
+     "value": 0.40000000292965693,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31",
+      "E:999999900325000016:NetIncomeLoss:2024-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "NetCashProvidedByUsedInOperatingActivities",
+       "unit": "USD",
+       "value": 54613904,
+       "period": "2024-01-01 to 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900325000016:NetIncomeLoss:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "NetIncomeLoss",
+       "unit": "USD",
+       "value": 136534759,
+       "period": "2024-01-01 to 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "current_ratio",
+     "fiscal_year": 2024,
+     "value": 0.8136513393043889,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900325000016:AssetsCurrent:2024-12-31",
+      "E:999999900325000016:LiabilitiesCurrent:2024-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900325000016:AssetsCurrent:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "AssetsCurrent",
+       "unit": "USD",
+       "value": 923677934,
+       "period": "as of 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900325000016:LiabilitiesCurrent:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "LiabilitiesCurrent",
+       "unit": "USD",
+       "value": 1135225728,
+       "period": "as of 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      }
+     ]
+    },
+    {
+     "name": "debt_to_equity",
+     "fiscal_year": 2024,
+     "value": 0.7023809523809523,
+     "unit": "ratio",
+     "reason": null,
+     "citation_ids": [
+      "E:999999900325000016:LongTermDebtNoncurrent:2024-12-31",
+      "E:999999900325000016:DebtCurrent:2024-12-31",
+      "E:999999900325000016:StockholdersEquity:2024-12-31"
+     ],
+     "inputs": [
+      {
+       "id": "E:999999900325000016:LongTermDebtNoncurrent:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "LongTermDebtNoncurrent",
+       "unit": "USD",
+       "value": 729787968,
+       "period": "as of 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900325000016:DebtCurrent:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "DebtCurrent",
+       "unit": "USD",
+       "value": 67572960,
+       "period": "as of 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      },
+      {
+       "id": "E:999999900325000016:StockholdersEquity:2024-12-31",
+       "cik": "9999999003",
+       "accession": "9999999003-25-000016",
+       "form": "10-K",
+       "filed": "2025-02-25",
+       "tag": "StockholdersEquity",
+       "unit": "USD",
+       "value": 1135225728,
+       "period": "as of 2024-12-31",
+       "fy": 2024,
+       "fp": "FY"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "flags": [
+  {
+   "rule_id": "current_ratio_thin",
+   "ratio": "current_ratio",
+   "fiscal_year": 2023,
+   "value": 0.9480240781902012,
+   "prior_value": 1.097222943309792,
+   "threshold": 1.0,
+   "op": "lt",
+   "severity": "review",
+   "message": "Review this change: current liabilities exceed current assets at fiscal year end.",
+   "citation_ids": [
+    "E:999999900324000012:AssetsCurrent:2023-12-31",
+    "E:999999900324000012:LiabilitiesCurrent:2023-12-31"
+   ]
+  },
+  {
+   "rule_id": "revenue_decline",
+   "ratio": "revenue_growth",
+   "fiscal_year": 2024,
+   "value": -0.15,
+   "prior_value": -0.02,
+   "threshold": -0.1,
+   "op": "lt",
+   "severity": "review",
+   "message": "Review this change: revenue fell by more than 10% against the prior fiscal year.",
+   "citation_ids": [
+    "E:999999900325000016:Revenues:2024-12-31",
+    "E:999999900324000012:Revenues:2023-12-31"
+   ]
+  },
+  {
+   "rule_id": "dso_lengthened",
+   "ratio": "dso",
+   "fiscal_year": 2024,
+   "value": 73.0,
+   "prior_value": 54.75,
+   "threshold": 15.0,
+   "op": "delta_gt",
+   "severity": "review",
+   "message": "Review this change: days sales outstanding lengthened by more than 15 days against the prior fiscal year.",
+   "citation_ids": [
+    "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900325000016:Revenues:2024-12-31",
+    "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+    "E:999999900324000012:Revenues:2023-12-31"
+   ]
+  },
+  {
+   "rule_id": "receivables_outpace_revenue",
+   "ratio": "receivables_to_revenue",
+   "fiscal_year": 2024,
+   "value": 0.2,
+   "prior_value": 0.15,
+   "threshold": 0.04,
+   "op": "delta_gt",
+   "severity": "review",
+   "message": "Review this change: receivables grew faster than revenue (ratio up by more than 4 points).",
+   "citation_ids": [
+    "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900325000016:Revenues:2024-12-31",
+    "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+    "E:999999900324000012:Revenues:2023-12-31"
+   ]
+  },
+  {
+   "rule_id": "cash_conversion_low",
+   "ratio": "ocf_to_net_income",
+   "fiscal_year": 2024,
+   "value": 0.40000000292965693,
+   "prior_value": 0.8999999975281182,
+   "threshold": 0.6,
+   "op": "lt",
+   "severity": "review",
+   "message": "Review this change: operating cash flow is below 60% of net income for the fiscal year.",
+   "citation_ids": [
+    "E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31",
+    "E:999999900325000016:NetIncomeLoss:2024-12-31"
+   ]
+  },
+  {
+   "rule_id": "current_ratio_thin",
+   "ratio": "current_ratio",
+   "fiscal_year": 2024,
+   "value": 0.8136513393043889,
+   "prior_value": 0.9480240781902012,
+   "threshold": 1.0,
+   "op": "lt",
+   "severity": "review",
+   "message": "Review this change: current liabilities exceed current assets at fiscal year end.",
+   "citation_ids": [
+    "E:999999900325000016:AssetsCurrent:2024-12-31",
+    "E:999999900325000016:LiabilitiesCurrent:2024-12-31"
+   ]
+  }
+ ],
+ "summary": [
+  "Revenue growth for FY2024 was -15.0% [E:999999900325000016:Revenues:2024-12-31; E:999999900324000012:Revenues:2023-12-31].",
+  "Receivables to revenue for FY2024 was 20.0% [E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31; E:999999900325000016:Revenues:2024-12-31].",
+  "Days sales outstanding for FY2024 was 73.0 days [E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31; E:999999900325000016:Revenues:2024-12-31].",
+  "Operating cash flow to net income for FY2024 was 0.40 [E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31; E:999999900325000016:NetIncomeLoss:2024-12-31].",
+  "Current ratio for FY2024 was 0.81 [E:999999900325000016:AssetsCurrent:2024-12-31; E:999999900325000016:LiabilitiesCurrent:2024-12-31].",
+  "Debt to equity for FY2024 was 0.70 [E:999999900325000016:LongTermDebtNoncurrent:2024-12-31; E:999999900325000016:DebtCurrent:2024-12-31; E:999999900325000016:StockholdersEquity:2024-12-31].",
+  "FY2023: Review this change: current liabilities exceed current assets at fiscal year end. Value 0.948, prior 1.097 [E:999999900324000012:AssetsCurrent:2023-12-31; E:999999900324000012:LiabilitiesCurrent:2023-12-31].",
+  "FY2024: Review this change: operating cash flow is below 60% of net income for the fiscal year. Value 0.400, prior 0.900 [E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31; E:999999900325000016:NetIncomeLoss:2024-12-31].",
+  "FY2024: Review this change: current liabilities exceed current assets at fiscal year end. Value 0.814, prior 0.948 [E:999999900325000016:AssetsCurrent:2024-12-31; E:999999900325000016:LiabilitiesCurrent:2024-12-31].",
+  "FY2024: Review this change: days sales outstanding lengthened by more than 15 days against the prior fiscal year. Value 73.000, prior 54.750 [E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31; E:999999900325000016:Revenues:2024-12-31; E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31; E:999999900324000012:Revenues:2023-12-31].",
+  "FY2024: Review this change: receivables grew faster than revenue (ratio up by more than 4 points). Value 0.200, prior 0.150 [E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31; E:999999900325000016:Revenues:2024-12-31; E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31; E:999999900324000012:Revenues:2023-12-31].",
+  "FY2024: Review this change: revenue fell by more than 10% against the prior fiscal year. Value -0.150, prior -0.020 [E:999999900325000016:Revenues:2024-12-31; E:999999900324000012:Revenues:2023-12-31]."
+ ],
+ "evidence": [
+  {
+   "id": "E:999999900322000004:AccountsReceivableNetCurrent:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "AccountsReceivableNetCurrent",
+   "unit": "USD",
+   "value": 436800000,
+   "period": "as of 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:AssetsCurrent:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "AssetsCurrent",
+   "unit": "USD",
+   "value": 1062008936,
+   "period": "as of 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:DebtCurrent:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "DebtCurrent",
+   "unit": "USD",
+   "value": 78000000,
+   "period": "as of 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:LiabilitiesCurrent:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "LiabilitiesCurrent",
+   "unit": "USD",
+   "value": 936000000,
+   "period": "as of 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:LongTermDebtNoncurrent:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "LongTermDebtNoncurrent",
+   "unit": "USD",
+   "value": 561600000,
+   "period": "as of 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:NetCashProvidedByUsedInOperatingActivities:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "NetCashProvidedByUsedInOperatingActivities",
+   "unit": "USD",
+   "value": 188021404,
+   "period": "2021-01-01 to 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:NetIncomeLoss:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "NetIncomeLoss",
+   "unit": "USD",
+   "value": 156684503,
+   "period": "2021-01-01 to 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:Revenues:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "Revenues",
+   "unit": "USD",
+   "value": 3120000000,
+   "period": "2021-01-01 to 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900322000004:StockholdersEquity:2021-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-22-000004",
+   "form": "10-K",
+   "filed": "2022-02-25",
+   "tag": "StockholdersEquity",
+   "unit": "USD",
+   "value": 1497600000,
+   "period": "as of 2021-12-31",
+   "fy": 2021,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/9999999003-22-000004-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900322000004/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:AccountsReceivableNetCurrent:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "AccountsReceivableNetCurrent",
+   "unit": "USD",
+   "value": 454272000,
+   "period": "as of 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:AssetsCurrent:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "AssetsCurrent",
+   "unit": "USD",
+   "value": 1103683392,
+   "period": "as of 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:DebtCurrent:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "DebtCurrent",
+   "unit": "USD",
+   "value": 81120000,
+   "period": "as of 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:LiabilitiesCurrent:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "LiabilitiesCurrent",
+   "unit": "USD",
+   "value": 1005888000,
+   "period": "as of 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:LongTermDebtNoncurrent:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "LongTermDebtNoncurrent",
+   "unit": "USD",
+   "value": 681408000,
+   "period": "as of 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:NetCashProvidedByUsedInOperatingActivities:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "NetCashProvidedByUsedInOperatingActivities",
+   "unit": "USD",
+   "value": 181801556,
+   "period": "2022-01-01 to 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:NetIncomeLoss:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "NetIncomeLoss",
+   "unit": "USD",
+   "value": 165274142,
+   "period": "2022-01-01 to 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:Revenues:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "Revenues",
+   "unit": "USD",
+   "value": 3244800000,
+   "period": "2022-01-01 to 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900323000008:StockholdersEquity:2022-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-23-000008",
+   "form": "10-K",
+   "filed": "2023-02-25",
+   "tag": "StockholdersEquity",
+   "unit": "USD",
+   "value": 1492608000,
+   "period": "as of 2022-12-31",
+   "fy": 2022,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/9999999003-23-000008-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900323000008/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "AccountsReceivableNetCurrent",
+   "unit": "USD",
+   "value": 476985600,
+   "period": "as of 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:AssetsCurrent:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "AssetsCurrent",
+   "unit": "USD",
+   "value": 1085265201,
+   "period": "as of 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:DebtCurrent:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "DebtCurrent",
+   "unit": "USD",
+   "value": 79497600,
+   "period": "as of 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:LiabilitiesCurrent:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "LiabilitiesCurrent",
+   "unit": "USD",
+   "value": 1144765440,
+   "period": "as of 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:LongTermDebtNoncurrent:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "LongTermDebtNoncurrent",
+   "unit": "USD",
+   "value": 763176960,
+   "period": "as of 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:NetCashProvidedByUsedInOperatingActivities:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "NetCashProvidedByUsedInOperatingActivities",
+   "unit": "USD",
+   "value": 145638032,
+   "period": "2023-01-01 to 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:NetIncomeLoss:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "NetIncomeLoss",
+   "unit": "USD",
+   "value": 161820036,
+   "period": "2023-01-01 to 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:Revenues:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "Revenues",
+   "unit": "USD",
+   "value": 3179904000,
+   "period": "2023-01-01 to 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900324000012:StockholdersEquity:2023-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-24-000012",
+   "form": "10-K",
+   "filed": "2024-02-25",
+   "tag": "StockholdersEquity",
+   "unit": "USD",
+   "value": 1399157760,
+   "period": "as of 2023-12-31",
+   "fy": 2023,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/9999999003-24-000012-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900324000012/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "AccountsReceivableNetCurrent",
+   "unit": "USD",
+   "value": 540583680,
+   "period": "as of 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:AssetsCurrent:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "AssetsCurrent",
+   "unit": "USD",
+   "value": 923677934,
+   "period": "as of 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:DebtCurrent:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "DebtCurrent",
+   "unit": "USD",
+   "value": 67572960,
+   "period": "as of 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:LiabilitiesCurrent:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "LiabilitiesCurrent",
+   "unit": "USD",
+   "value": 1135225728,
+   "period": "as of 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:LongTermDebtNoncurrent:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "LongTermDebtNoncurrent",
+   "unit": "USD",
+   "value": 729787968,
+   "period": "as of 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "NetCashProvidedByUsedInOperatingActivities",
+   "unit": "USD",
+   "value": 54613904,
+   "period": "2024-01-01 to 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:NetIncomeLoss:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "NetIncomeLoss",
+   "unit": "USD",
+   "value": 136534759,
+   "period": "2024-01-01 to 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:Revenues:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "Revenues",
+   "unit": "USD",
+   "value": 2702918400,
+   "period": "2024-01-01 to 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  },
+  {
+   "id": "E:999999900325000016:StockholdersEquity:2024-12-31",
+   "cik": "9999999003",
+   "accession": "9999999003-25-000016",
+   "form": "10-K",
+   "filed": "2025-02-25",
+   "tag": "StockholdersEquity",
+   "unit": "USD",
+   "value": 1135225728,
+   "period": "as of 2024-12-31",
+   "fy": 2024,
+   "fp": "FY",
+   "urls": {
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/9999999003-25-000016-index.htm",
+    "filing_folder": "https://www.sec.gov/Archives/edgar/data/9999999003/999999900325000016/",
+    "company_browse": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=9999999003&type=10-K&dateb=&owner=include&count=40",
+    "companyfacts_api": "https://data.sec.gov/api/xbrl/companyfacts/CIK9999999003.json"
+   }
+  }
+ ]
+}

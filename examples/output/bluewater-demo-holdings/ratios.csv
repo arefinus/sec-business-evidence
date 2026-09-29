@@ -1,0 +1,25 @@
+fiscal_year,ratio,value,unit,reason,citation_ids
+2021,revenue_growth,,fraction,no prior fiscal year revenue,E:999999900222000004:Revenues:2021-12-31
+2021,receivables_to_revenue,0.1,fraction,,E:999999900222000004:AccountsReceivableNetCurrent:2021-12-31;E:999999900222000004:Revenues:2021-12-31
+2021,dso,36.5,days,,E:999999900222000004:AccountsReceivableNetCurrent:2021-12-31;E:999999900222000004:Revenues:2021-12-31
+2021,ocf_to_net_income,,ratio,missing input: operating_cash_flow,
+2021,current_ratio,1.6835516875,ratio,,E:999999900222000004:AssetsCurrent:2021-12-31;E:999999900222000004:LiabilitiesCurrent:2021-12-31
+2021,debt_to_equity,0.375,ratio,,E:999999900222000004:LongTermDebtNoncurrent:2021-12-31;E:999999900222000004:StockholdersEquity:2021-12-31
+2022,revenue_growth,0.31,fraction,,E:999999900223000008:Revenues:2022-12-31;E:999999900222000004:Revenues:2021-12-31
+2022,receivables_to_revenue,0.11,fraction,,E:999999900223000008:AccountsReceivableNetCurrent:2022-12-31;E:999999900223000008:Revenues:2022-12-31
+2022,dso,40.15,days,,E:999999900223000008:AccountsReceivableNetCurrent:2022-12-31;E:999999900223000008:Revenues:2022-12-31
+2022,ocf_to_net_income,0.8500000096674195,ratio,,E:999999900223000008:NetCashProvidedByUsedInOperatingActivities:2022-12-31;E:999999900223000008:NetIncomeLoss:2022-12-31
+2022,current_ratio,1.5971786339058525,ratio,,E:999999900223000008:AssetsCurrent:2022-12-31;E:999999900223000008:LiabilitiesCurrent:2022-12-31
+2022,debt_to_equity,0.45652173913043476,ratio,,E:999999900223000008:LongTermDebtNoncurrent:2022-12-31;E:999999900223000008:StockholdersEquity:2022-12-31
+2023,revenue_growth,0.18,fraction,,E:999999900224000012:Revenues:2023-12-31;E:999999900223000008:Revenues:2022-12-31
+2023,receivables_to_revenue,0.16,fraction,,E:999999900224000012:AccountsReceivableNetCurrent:2023-12-31;E:999999900224000012:Revenues:2023-12-31
+2023,dso,58.4,days,,E:999999900224000012:AccountsReceivableNetCurrent:2023-12-31;E:999999900224000012:Revenues:2023-12-31
+2023,ocf_to_net_income,0.549999993122261,ratio,,E:999999900224000012:NetCashProvidedByUsedInOperatingActivities:2023-12-31;E:999999900224000012:NetIncomeLoss:2023-12-31
+2023,current_ratio,1.4074845111215337,ratio,,E:999999900224000012:AssetsCurrent:2023-12-31;E:999999900224000012:LiabilitiesCurrent:2023-12-31
+2023,debt_to_equity,0.5454545454545454,ratio,,E:999999900224000012:LongTermDebtNoncurrent:2023-12-31;E:999999900224000012:StockholdersEquity:2023-12-31
+2024,revenue_growth,0.09,fraction,,E:999999900225000016:Revenues:2024-12-31;E:999999900224000012:Revenues:2023-12-31
+2024,receivables_to_revenue,0.18999999981453147,fraction,,E:999999900225000016:AccountsReceivableNetCurrent:2024-12-31;E:999999900225000016:Revenues:2024-12-31
+2024,dso,69.34999993230399,days,,E:999999900225000016:AccountsReceivableNetCurrent:2024-12-31;E:999999900225000016:Revenues:2024-12-31
+2024,ocf_to_net_income,0.7000000015348394,ratio,,E:999999900225000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31;E:999999900225000016:NetIncomeLoss:2024-12-31
+2024,current_ratio,1.3314889665433718,ratio,,E:999999900225000016:AssetsCurrent:2024-12-31;E:999999900225000016:LiabilitiesCurrent:2024-12-31
+2024,debt_to_equity,0.6428571431725655,ratio,,E:999999900225000016:LongTermDebtNoncurrent:2024-12-31;E:999999900225000016:StockholdersEquity:2024-12-31

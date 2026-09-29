@@ -1,0 +1,207 @@
+{
+ "schemaVersion": 1,
+ "mode": "synthetic-demo",
+ "issuer": {
+  "cik": "9999999003",
+  "name": "Granite Demo Industries"
+ },
+ "fiscal_year": 2024,
+ "nodes": [
+  {
+   "id": "revenue",
+   "label": "Revenue",
+   "value": 2702918400,
+   "unit": "USD",
+   "period": "2024-01-01 to 2024-12-31",
+   "tag": "Revenues",
+   "citation_ids": [
+    "E:999999900325000016:Revenues:2024-12-31"
+   ]
+  },
+  {
+   "id": "receivables",
+   "label": "Receivables",
+   "value": 540583680,
+   "unit": "USD",
+   "period": "as of 2024-12-31",
+   "tag": "AccountsReceivableNetCurrent",
+   "citation_ids": [
+    "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31"
+   ]
+  },
+  {
+   "id": "cash",
+   "label": "Cash",
+   "value": 259808523,
+   "unit": "USD",
+   "period": "as of 2024-12-31",
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "citation_ids": [
+    "E:999999900325000016:CashAndCashEquivalentsAtCarryingValue:2024-12-31"
+   ]
+  },
+  {
+   "id": "liabilities",
+   "label": "Liabilities",
+   "value": 2081247168,
+   "unit": "USD",
+   "period": "as of 2024-12-31",
+   "tag": "Liabilities",
+   "citation_ids": [
+    "E:999999900325000016:Liabilities:2024-12-31"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "revenue",
+   "target": "receivables",
+   "relation": "receivables_to_revenue",
+   "value": 0.2,
+   "unit": "fraction",
+   "citation_ids": [
+    "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900325000016:Revenues:2024-12-31"
+   ],
+   "flag_ids": [
+    "receivables_outpace_revenue"
+   ]
+  },
+  {
+   "source": "receivables",
+   "target": "cash",
+   "relation": "dso",
+   "value": 73.0,
+   "unit": "days",
+   "citation_ids": [
+    "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900325000016:Revenues:2024-12-31"
+   ],
+   "flag_ids": [
+    "dso_lengthened"
+   ]
+  },
+  {
+   "source": "revenue",
+   "target": "cash",
+   "relation": "ocf_to_net_income",
+   "value": 0.40000000292965693,
+   "unit": "ratio",
+   "citation_ids": [
+    "E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31",
+    "E:999999900325000016:NetIncomeLoss:2024-12-31"
+   ],
+   "flag_ids": [
+    "cash_conversion_low"
+   ]
+  },
+  {
+   "source": "cash",
+   "target": "liabilities",
+   "relation": "current_ratio",
+   "value": 0.8136513393043889,
+   "unit": "ratio",
+   "citation_ids": [
+    "E:999999900325000016:AssetsCurrent:2024-12-31",
+    "E:999999900325000016:LiabilitiesCurrent:2024-12-31"
+   ],
+   "flag_ids": [
+    "current_ratio_thin"
+   ]
+  },
+  {
+   "source": "liabilities",
+   "target": "revenue",
+   "relation": "debt_to_equity",
+   "value": 0.7023809523809523,
+   "unit": "ratio",
+   "citation_ids": [
+    "E:999999900325000016:LongTermDebtNoncurrent:2024-12-31",
+    "E:999999900325000016:DebtCurrent:2024-12-31",
+    "E:999999900325000016:StockholdersEquity:2024-12-31"
+   ],
+   "flag_ids": []
+  }
+ ],
+ "flags": [
+  {
+   "rule_id": "revenue_decline",
+   "ratio": "revenue_growth",
+   "fiscal_year": 2024,
+   "value": -0.15,
+   "prior_value": -0.02,
+   "threshold": -0.1,
+   "op": "lt",
+   "severity": "review",
+   "message": "Review this change: revenue fell by more than 10% against the prior fiscal year.",
+   "citation_ids": [
+    "E:999999900325000016:Revenues:2024-12-31",
+    "E:999999900324000012:Revenues:2023-12-31"
+   ]
+  },
+  {
+   "rule_id": "dso_lengthened",
+   "ratio": "dso",
+   "fiscal_year": 2024,
+   "value": 73.0,
+   "prior_value": 54.75,
+   "threshold": 15.0,
+   "op": "delta_gt",
+   "severity": "review",
+   "message": "Review this change: days sales outstanding lengthened by more than 15 days against the prior fiscal year.",
+   "citation_ids": [
+    "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900325000016:Revenues:2024-12-31",
+    "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+    "E:999999900324000012:Revenues:2023-12-31"
+   ]
+  },
+  {
+   "rule_id": "receivables_outpace_revenue",
+   "ratio": "receivables_to_revenue",
+   "fiscal_year": 2024,
+   "value": 0.2,
+   "prior_value": 0.15,
+   "threshold": 0.04,
+   "op": "delta_gt",
+   "severity": "review",
+   "message": "Review this change: receivables grew faster than revenue (ratio up by more than 4 points).",
+   "citation_ids": [
+    "E:999999900325000016:AccountsReceivableNetCurrent:2024-12-31",
+    "E:999999900325000016:Revenues:2024-12-31",
+    "E:999999900324000012:AccountsReceivableNetCurrent:2023-12-31",
+    "E:999999900324000012:Revenues:2023-12-31"
+   ]
+  },
+  {
+   "rule_id": "cash_conversion_low",
+   "ratio": "ocf_to_net_income",
+   "fiscal_year": 2024,
+   "value": 0.40000000292965693,
+   "prior_value": 0.8999999975281182,
+   "threshold": 0.6,
+   "op": "lt",
+   "severity": "review",
+   "message": "Review this change: operating cash flow is below 60% of net income for the fiscal year.",
+   "citation_ids": [
+    "E:999999900325000016:NetCashProvidedByUsedInOperatingActivities:2024-12-31",
+    "E:999999900325000016:NetIncomeLoss:2024-12-31"
+   ]
+  },
+  {
+   "rule_id": "current_ratio_thin",
+   "ratio": "current_ratio",
+   "fiscal_year": 2024,
+   "value": 0.8136513393043889,
+   "prior_value": 0.9480240781902012,
+   "threshold": 1.0,
+   "op": "lt",
+   "severity": "review",
+   "message": "Review this change: current liabilities exceed current assets at fiscal year end.",
+   "citation_ids": [
+    "E:999999900325000016:AssetsCurrent:2024-12-31",
+    "E:999999900325000016:LiabilitiesCurrent:2024-12-31"
+   ]
+  }
+ ]
+}

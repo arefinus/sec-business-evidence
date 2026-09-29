@@ -1,0 +1,52 @@
+# Review flags. Each rule compares one ratio against a threshold and, when it fires,
+# emits a "review this change" note carrying the citations of every input. These are
+# attention rules for an analyst. They are not a classifier and not a verdict of any kind.
+#
+# op values:
+#   gt        ratio value  > threshold
+#   lt        ratio value  < threshold
+#   abs_gt    |ratio value| > threshold
+#   delta_gt  (ratio value - prior fiscal year value) > threshold
+#   delta_lt  (ratio value - prior fiscal year value) < threshold
+schema_version: 1
+rules:
+  - id: revenue_growth_large_move
+    ratio: revenue_growth
+    op: abs_gt
+    threshold: 0.25
+    message: "Review this change: revenue moved by more than 25% against the prior fiscal year."
+  - id: revenue_decline
+    ratio: revenue_growth
+    op: lt
+    threshold: -0.10
+    message: "Review this change: revenue fell by more than 10% against the prior fiscal year."
+  - id: dso_lengthened
+    ratio: dso
+    op: delta_gt
+    threshold: 15.0
+    message: "Review this change: days sales outstanding lengthened by more than 15 days against the prior fiscal year."
+  - id: receivables_outpace_revenue
+    ratio: receivables_to_revenue
+    op: delta_gt
+    threshold: 0.04
+    message: "Review this change: receivables grew faster than revenue (ratio up by more than 4 points)."
+  - id: cash_conversion_low
+    ratio: ocf_to_net_income
+    op: lt
+    threshold: 0.60
+    message: "Review this change: operating cash flow is below 60% of net income for the fiscal year."
+  - id: current_ratio_thin
+    ratio: current_ratio
+    op: lt
+    threshold: 1.0
+    message: "Review this change: current liabilities exceed current assets at fiscal year end."
+  - id: leverage_high
+    ratio: debt_to_equity
+    op: gt
+    threshold: 2.0
+    message: "Review this change: debt exceeds twice the stockholders equity at fiscal year end."
+  - id: leverage_jump
+    ratio: debt_to_equity
+    op: delta_gt
+    threshold: 0.50
+    message: "Review this change: debt to equity rose by more than 0.50 against the prior fiscal year."

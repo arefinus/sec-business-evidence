@@ -1,0 +1,41 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='720' height='360' viewBox='0 0 720 360'>
+<rect width='720' height='360' fill='white'/>
+<text x='70' y='20' font-family='Helvetica, Arial, sans-serif' font-size='12' font-size='15' font-weight='bold'>Operating cash flow to net income</text>
+<text x='70' y='348' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#555'>Computed by make demo on synthetic fixture v1, seed 42. Fictional issuers; not a benchmark result.</text>
+<line x1='70' y1='310' x2='700' y2='310' stroke='#333'/>
+<line x1='70' y1='310' x2='70' y2='40' stroke='#333'/>
+<text x='62' y='314.0' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='end'>0.28</text>
+<line x1='70' y1='310.0' x2='700' y2='310.0' stroke='#eee'/>
+<text x='62' y='246.5' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='end'>0.54</text>
+<line x1='70' y1='242.5' x2='700' y2='242.5' stroke='#eee'/>
+<text x='62' y='179.0' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='end'>0.81</text>
+<line x1='70' y1='175.0' x2='700' y2='175.0' stroke='#eee'/>
+<text x='62' y='111.5' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='end'>1.08</text>
+<line x1='70' y1='107.5' x2='700' y2='107.5' stroke='#eee'/>
+<text x='62' y='44.0' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='end'>1.35</text>
+<line x1='70' y1='40.0' x2='700' y2='40.0' stroke='#eee'/>
+<text x='100.0' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='middle'>FY2021</text>
+<text x='290.0' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='middle'>FY2022</text>
+<text x='480.0' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='middle'>FY2023</text>
+<text x='670.0' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' text-anchor='middle'>FY2024</text>
+<path d='M290.0,165.2 L480.0,241.0 L670.0,203.1' fill='none' stroke='#1f5f8b' stroke-width='2'/>
+<circle cx='290.0' cy='165.2' r='3.5' fill='#1f5f8b'/>
+<circle cx='480.0' cy='241.0' r='3.5' fill='#1f5f8b'/>
+<circle cx='670.0' cy='203.1' r='3.5' fill='#1f5f8b'/>
+<rect x='70' y='26' width='10' height='10' fill='#1f5f8b'/>
+<text x='84' y='35' font-family='Helvetica, Arial, sans-serif' font-size='12'>Bluewater Demo Holdings</text>
+<path d='M100.0,76.8 L290.0,102.0 L480.0,152.5 L670.0,278.8' fill='none' stroke='#d97b29' stroke-width='2'/>
+<circle cx='100.0' cy='76.8' r='3.5' fill='#d97b29'/>
+<circle cx='290.0' cy='102.0' r='3.5' fill='#d97b29'/>
+<circle cx='480.0' cy='152.5' r='3.5' fill='#d97b29'/>
+<circle cx='670.0' cy='278.8' r='3.5' fill='#d97b29'/>
+<rect x='290' y='26' width='10' height='10' fill='#d97b29'/>
+<text x='304' y='35' font-family='Helvetica, Arial, sans-serif' font-size='12'>Granite Demo Industries</text>
+<path d='M100.0,89.4 L290.0,114.7 L480.0,71.2 L670.0,122.2' fill='none' stroke='#3a8f5a' stroke-width='2'/>
+<circle cx='100.0' cy='89.4' r='3.5' fill='#3a8f5a'/>
+<circle cx='290.0' cy='114.7' r='3.5' fill='#3a8f5a'/>
+<circle cx='480.0' cy='71.2' r='3.5' fill='#3a8f5a'/>
+<circle cx='670.0' cy='122.2' r='3.5' fill='#3a8f5a'/>
+<rect x='510' y='26' width='10' height='10' fill='#3a8f5a'/>
+<text x='524' y='35' font-family='Helvetica, Arial, sans-serif' font-size='12'>Northwind Demo Corp</text>
+</svg>
